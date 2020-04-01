@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="isAnimalAdded"
+            type="Boolean" />
+
+        <variable
+            name="viewModel"
+            type="com.onebyte.eon.ui.home.HomeViewModel" />
+    </data>
+
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhite"
+        android:fitsSystemWindows="true">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".ui.home.HomeActivity">
+
+            <FrameLayout
+                android:id="@+id/flHomeContainer"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_0dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+<!--            <com.google.android.material.bottomnavigation.BottomNavigationView-->
+<!--                android:id="@+id/navigation"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:background="?android:attr/windowBackground"-->
+<!--                android:foreground="?attr/selectableItemBackground"-->
+<!--                app:itemBackground="@color/colorWhite"-->
+<!--                app:itemIconTint="@drawable/tab_color_selector"-->
+<!--                app:itemTextColor="@drawable/tab_color_selector"-->
+<!--                app:labelVisibilityMode="labeled"-->
+<!--                app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                app:menu="@menu/menu_activity_main_bottom_navigation_view" />-->
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <!--        <com.google.android.material.navigation.NavigationView-->
+        <!--            android:id="@+id/nav_view"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="match_parent"-->
+        <!--            android:layout_gravity="start"-->
+        <!--            android:paddingStart="@dimen/_34dp"-->
+        <!--            android:paddingTop="@dimen/_34dp"-->
+        <!--            android:paddingEnd="@dimen/_0dp"-->
+        <!--            android:visibility="gone"-->
+        <!--            app:headerLayout="@layout/layout_nav_header"-->
+        <!--            app:itemIconTint="@color/colorAccent"-->
+        <!--            app:itemTextColor="@color/colorAccent"-->
+        <!--            app:menu="@menu/menu_activity_main_drawer" />-->
+
+    </androidx.drawerlayout.widget.DrawerLayout>
+</layout>

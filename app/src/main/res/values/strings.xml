@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">EON</string>
+
+    <string name="internet_not_connected">Internet not connected.</string>
+    <string name="str_ok">Ok</string>
+
+</resources>
